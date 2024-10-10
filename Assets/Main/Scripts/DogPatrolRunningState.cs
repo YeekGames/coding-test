@@ -2,17 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DogPatrolRunningState : MonoBehaviour
+public class DogPatrolRunningState : IDogState
 {
-    // Start is called before the first frame update
-    void Start()
+    private Dog dog;
+
+    public void EnterState(Dog _dog)
     {
-        
+        dog = _dog;
     }
 
-    // Update is called once per frame
-    void Update()
+    public void UpdateState()
     {
-        
+        //Patrol();
     }
 }

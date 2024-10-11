@@ -165,6 +165,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1574591614}
     m_Modifications:
+    - target: {fileID: 1622930194220143941, guid: 3568ea2e97a164d43a0c334ab62e8694,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: d27fe57c52a2f7341b9c47dfefa06420, type: 2}
     - target: {fileID: 3925358294965130716, guid: 3568ea2e97a164d43a0c334ab62e8694,
         type: 3}
       propertyPath: m_Name
@@ -1685,7 +1690,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dogSO: {fileID: 11400000, guid: e70d265beb829b94698873f204dac2df, type: 2}
-  animator: {fileID: 0}
+  animator: {fileID: 2111622841}
   waypoint: {fileID: 742709047}
   waypoints: []
   waypointRegisterDistance: 0.5
@@ -1868,6 +1873,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1599806208}
     m_Modifications:
+    - target: {fileID: 5475111282331158713, guid: cbd015c8392edc84097e8e4de87a9d0a,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: b11735c662ede34479f671abac5ece13, type: 2}
     - target: {fileID: 6191479115475244193, guid: cbd015c8392edc84097e8e4de87a9d0a,
         type: 3}
       propertyPath: m_RootOrder
@@ -2034,6 +2044,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &2111622841 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 5475111282331158713, guid: cbd015c8392edc84097e8e4de87a9d0a,
+    type: 3}
+  m_PrefabInstance: {fileID: 2012747452}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2118289597
 GameObject:
   m_ObjectHideFlags: 0

@@ -12,6 +12,8 @@ public class PedestrianBehaviour : MonoBehaviour
 
     public PedestrianSO pedestrianSO;
 
+    public Animator animator;
+
     public Transform waypoint;
     public List<Transform> waypoints;
     public float waypointRegisterDistance = 1f;

@@ -22,6 +22,8 @@ public class PedestrianBehaviour : MonoBehaviour
     public NavMeshAgent navMeshAgent;
 
     public bool isPatroling;
+    public float alertRadius = 2f;
+    public IAlertable alertTarget;
 
     void Start()
     {
@@ -34,6 +36,8 @@ public class PedestrianBehaviour : MonoBehaviour
     private void InitializeStates()
     {
         pedestrianPatrolingState = new PedestrianPatrolWalkingState();
+        pedestrianPatrolFleeingState = new PedestrianPatrolFleeingState();
+
         SetState(pedestrianPatrolingState);
     }
 
@@ -63,5 +67,21 @@ public class PedestrianBehaviour : MonoBehaviour
         }
 
         navMeshAgent.SetDestination(nextWaypointPosition);
+    }
+
+    private void OnDrawGizmosSelected()
+    {
+        Gizmos.color = Color.green;
+        Gizmos.DrawWireSphere(transform.position, alertRadius);
+
+        if (waypoints.Count > 1)
+        {
+            for (int i = 0; i < waypoints.Count; i++)
+            {
+                Gizmos.color = Color.blue;
+                var nextPoint = (i + 1) % waypoints.Count;
+                Gizmos.DrawLine(waypoints[i].position, waypoints[nextPoint].position);
+            }
+        }
     }
 }

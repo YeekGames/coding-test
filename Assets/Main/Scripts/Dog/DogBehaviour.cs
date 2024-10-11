@@ -4,9 +4,11 @@ using UnityEngine;
 using UnityEngine.AI;
 using System.Linq;
 
-public class DogBehaviour : MonoBehaviour
+public class DogBehaviour : MonoBehaviour, IAlertable
 {
     private DogState currentState;
+    public Transform alertable { get; }
+
     [HideInInspector] public DogPatrolWalkingState dogPatrolWalkingState;
     [HideInInspector] public DogPatrolRunningState dogPatrolRunningState;
     [HideInInspector] public DogPatrolRestingState dogPatrolRestingState;

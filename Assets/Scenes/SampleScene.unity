@@ -1483,6 +1483,32 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1034033453}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1351255526 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: bbad9d9717769ae4495d81295b6fbceb,
+    type: 3}
+  m_PrefabInstance: {fileID: 185820493}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1351255527
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1351255526}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: aa813279bcad5504999dc98908b8156a, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1494178926
 GameObject:
   m_ObjectHideFlags: 0
@@ -1525,6 +1551,7 @@ GameObject:
   - component: {fileID: 1574591614}
   - component: {fileID: 1574591616}
   - component: {fileID: 1574591615}
+  - component: {fileID: 1574591617}
   m_Layer: 0
   m_Name: Dog_2
   m_TagString: Untagged
@@ -1590,6 +1617,20 @@ MonoBehaviour:
   currentWaypointIndex: 0
   navMeshAgent: {fileID: 1574591615}
   isPatroling: 0
+--- !u!136 &1574591617
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1574591613}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.5
+  m_Height: 1
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.5, z: 0}
 --- !u!1 &1579787393
 GameObject:
   m_ObjectHideFlags: 0
@@ -1632,6 +1673,7 @@ GameObject:
   - component: {fileID: 1599806208}
   - component: {fileID: 1599806210}
   - component: {fileID: 1599806209}
+  - component: {fileID: 1599806211}
   m_Layer: 0
   m_Name: Dog_1
   m_TagString: Untagged
@@ -1697,6 +1739,20 @@ MonoBehaviour:
   currentWaypointIndex: 0
   navMeshAgent: {fileID: 1599806209}
   isPatroling: 0
+--- !u!136 &1599806211
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1599806207}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.5
+  m_Height: 1
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.5, z: 0}
 --- !u!1 &1671448804
 GameObject:
   m_ObjectHideFlags: 0
@@ -1827,14 +1883,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f82ffd390717db445bd30c81d28533dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pedestrianPatrolFleeingState: {fileID: 0}
   pedestrianSO: {fileID: 11400000, guid: fafe75a6484626d47977f5fa74874c81, type: 2}
+  animator: {fileID: 1351255527}
   waypoint: {fileID: 487044327}
   waypoints: []
-  waypointRegisterDistance: 1
+  waypointRegisterDistance: 0.5
   currentWaypointIndex: 0
   navMeshAgent: {fileID: 1755429472}
   isPatroling: 0
+  alertRadius: 3
 --- !u!1 &1931609308
 GameObject:
   m_ObjectHideFlags: 0

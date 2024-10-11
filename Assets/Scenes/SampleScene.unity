@@ -153,6 +153,7 @@ Transform:
   m_Children:
   - {fileID: 623309710}
   - {fileID: 918049912}
+  - {fileID: 1931609309}
   - {fileID: 557481422}
   m_Father: {fileID: 2118289598}
   m_RootOrder: 1
@@ -177,7 +178,7 @@ PrefabInstance:
     - target: {fileID: 4161284582465434903, guid: 3568ea2e97a164d43a0c334ab62e8694,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.479
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4161284582465434903, guid: 3568ea2e97a164d43a0c334ab62e8694,
         type: 3}
@@ -622,7 +623,7 @@ GameObject:
   m_Component:
   - component: {fileID: 425412293}
   m_Layer: 0
-  m_Name: Pedestrian waypoints 4
+  m_Name: Pedestrian waypoints 5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -636,12 +637,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 425412292}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -4.09, y: 0, z: -4.47}
+  m_LocalPosition: {x: -4.48, y: 0, z: -6.3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 487044327}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &487044326
 GameObject:
@@ -674,6 +675,7 @@ Transform:
   - {fileID: 1579787394}
   - {fileID: 319848630}
   - {fileID: 1725651793}
+  - {fileID: 973920912}
   - {fileID: 425412293}
   m_Father: {fileID: 2118289598}
   m_RootOrder: 2
@@ -724,7 +726,7 @@ GameObject:
   m_Component:
   - component: {fileID: 557481422}
   m_Layer: 0
-  m_Name: Dog_1 waypoints 3
+  m_Name: Dog_1 waypoints 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -743,7 +745,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 86426444}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &595559854
 GameObject:
@@ -963,7 +965,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 623309709}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.02, y: 0, z: -2.76}
+  m_LocalPosition: {x: -4.92, y: 0, z: -2.76}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1001,6 +1003,12 @@ Transform:
   m_Father: {fileID: 742709047}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &648181596 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 1622930194220143941, guid: 3568ea2e97a164d43a0c334ab62e8694,
+    type: 3}
+  m_PrefabInstance: {fileID: 95483511}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &742709046
 GameObject:
   m_ObjectHideFlags: 0
@@ -1335,12 +1343,43 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 918049911}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.99, y: 0, z: -2.34}
+  m_LocalPosition: {x: 1.97, y: 0, z: -1.73}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 86426444}
   m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &973920911
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 973920912}
+  m_Layer: 0
+  m_Name: Pedestrian waypoints 4
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &973920912
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 973920911}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -3.25, y: 0, z: 2.16}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 487044327}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1034033453
 GameObject:
@@ -1479,6 +1518,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1574591614}
+  - component: {fileID: 1574591616}
+  - component: {fileID: 1574591615}
   m_Layer: 0
   m_Name: Dog_2
   m_TagString: Untagged
@@ -1494,7 +1535,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1574591613}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -3.99, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1502,6 +1543,48 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!195 &1574591615
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1574591613}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.5
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 2
+  m_BaseOffset: 0
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
+--- !u!114 &1574591616
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1574591613}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 030d8f1c3124372478e1ebc7bd189014, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dogSO: {fileID: 11400000, guid: 0d2ba01d425b20b478667f086ddb3ed9, type: 2}
+  animator: {fileID: 648181596}
+  waypoint: {fileID: 86426444}
+  waypoints: []
+  waypointRegisterDistance: 0.5
+  currentWaypointIndex: 0
+  navMeshAgent: {fileID: 1574591615}
+  isPatroling: 0
 --- !u!1 &1579787393
 GameObject:
   m_ObjectHideFlags: 0
@@ -1601,12 +1684,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 030d8f1c3124372478e1ebc7bd189014, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dogSO: {fileID: 11400000, guid: e70d265beb829b94698873f204dac2df, type: 2}
+  animator: {fileID: 0}
   waypoint: {fileID: 742709047}
   waypoints: []
-  waypointRegisterDistance: 1
+  waypointRegisterDistance: 0.5
   currentWaypointIndex: 0
   navMeshAgent: {fileID: 1599806209}
-  dogPattern: 0
+  isPatroling: 0
 --- !u!1 &1671448804
 GameObject:
   m_ObjectHideFlags: 0
@@ -1678,6 +1763,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1755429471}
+  - component: {fileID: 1755429473}
   - component: {fileID: 1755429472}
   m_Layer: 0
   m_Name: Pedestrian
@@ -1685,7 +1771,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1755429471
 Transform:
   m_ObjectHideFlags: 0
@@ -1724,6 +1810,57 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!114 &1755429473
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1755429470}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f82ffd390717db445bd30c81d28533dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pedestrianPatrolFleeingState: {fileID: 0}
+  pedestrianSO: {fileID: 11400000, guid: fafe75a6484626d47977f5fa74874c81, type: 2}
+  waypoint: {fileID: 487044327}
+  waypoints: []
+  waypointRegisterDistance: 1
+  currentWaypointIndex: 0
+  navMeshAgent: {fileID: 1755429472}
+  isPatroling: 0
+--- !u!1 &1931609308
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1931609309}
+  m_Layer: 0
+  m_Name: Dog_1 waypoints 3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1931609309
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1931609308}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.49, y: 0, z: -5.2}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 86426444}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2012747452
 PrefabInstance:
   m_ObjectHideFlags: 0
